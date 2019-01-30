@@ -7,12 +7,12 @@ namespace BEASTFUCKINGMP
 {
     public static class GUI
     {
-		public static float GetDeltaTime()
+	public static float GetDeltaTime()
         {
             return RAGE.Game.Misc.GetFrameTime();
         }
 		
-		public static float Lerp(float a, float b, float t)
+	public static float Lerp(float a, float b, float t)
         {
             if (t > 1.0f)
                 t = 1.0f;
