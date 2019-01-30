@@ -32,7 +32,7 @@ RAGE.Game.Graphics.Set2dLayer(4);
 RAGE.Game.Graphics.DrawScaleformMovie(PhoneScaleform, 0.1f, 0.179f, 0.2f, 0.356f, 255, 0, 255, 255, 0);  
 RAGE.Game.Ui.SetTextRenderId(1); //important to reset back in case you play around with other render ids  
 
-**NOTES:**
+**NOTES:**  
 YOU CAN DRAW OTHER STUFF TO THE PHONE, AFTER YOU DRAW THE SCALEFORM  
 MOVING THE PHONE ON AND OFF THE SCREEN WAS DONE USING A CUSTOM LERP FUNCTION  
 
