@@ -6,7 +6,7 @@ Not finished and missing documentation for some apps however if you decompile th
 
 
 
-**Important stuff to know**
+**Important stuff to know**  
 The phone position in SP on the screen is (99.62f, -45.305f, -113f).  
 The phone rotation in SP on the screen is (-90f, 0f, 0f).  
 The phone scale is 500f.  
@@ -14,7 +14,7 @@ The scaleform MUST be located at 0.1f, 0.179f and have a size of 0.2f, 0.356f wh
 
 YOU HAVE TO REQUEST "cellphone_ifruit"/"cellphone_facade"/"cellphone_badget" BEFORE YOU CREATE THE CELLPHONE. THIS WILL CAUSE THE GAME TO LOAD UP THE SP PHONE ON THE PED AS WELL, IF YOU DO NOT DO THIS THE PED WILL HAVE A FAKE PHONE INSTEAD
 
-**Main Process**
+**Main Process**  
 
 RAGE.Game.Graphics.RequestScaleformMovie("cellphone_ifruit");  
 //important to wait for scaleform to load first, check script to see how  
@@ -25,7 +25,7 @@ RAGE.Game.Mobile.SetMobilePhoneScale(500f);
 RAGE.Game.Mobile.GetMobilePhoneRenderId(ref PhoneRenderID); //important  
 RAGE.Game.Mobile.ScriptIsMovingMobilePhoneOffscreen(false); //turns phone on ped  
 
-**The inside the draw event you draw the phone like this**
+**The inside the draw event you draw the phone like this**  
 
 RAGE.Game.Ui.SetTextRenderId(PhoneRenderID);  
 RAGE.Game.Graphics.Set2dLayer(4);  
